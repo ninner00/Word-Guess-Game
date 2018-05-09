@@ -1,0 +1,56 @@
+.jumbotron-hero .img {
+    margin-bottom: 0px;
+    opacity: 0.4;
+    color: #fff;
+    background: #000 url("../images/beer.jpg") top center no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    overflow: hidden;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:1;
+}
+ 
+
+.jumbotron {
+  position:relative;
+  padding-top:50px;
+  padding-bottom:100px;
+}
+.jumbotron .container {
+  position:relative;
+  z-index:2;
+}
+
+@media screen and (max-width: 768px) {
+  .jumbotron {
+    padding-top:20px;
+    padding-bottom:20px;
+  }
+}
+
+#guessed-letters {
+	color:#F1CE8F;
+	background: darkgray;
+	border-radius: 4px;
+	padding: 5px 15px;
+	/*letter-spacing: 7px;*/
+	text-align: center;
+
+	/*
+	cursor: pointer;*/
+}
+
+/*#guessed-letters:hover {
+	background: lightgray;
+}
+
+#guessed-letters .deactivated {
+	color:darkgray;
+}
+
+#guessed-letters .deactivated:hover {
+	color: lightgray;
+}*/

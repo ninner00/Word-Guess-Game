@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+	<title>Word Guess Game</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+<body>
+
+	<div class="jumbotron jumbotron-hero">
+  		<div class="img"></div>
+		<div class="container text-center">
+			<div class="page-header"> 
+				<h1>Beerman Game</h1>
+				<h4>Guess different types of beer and win! Cheers!!</h4>
+			</div>
+			<div class="row align-items-center">
+				<div class="col-12" style="padding-top: 2em;">
+					<button id="new-game-button" type="button" class="btn btn-primary">Start a new game</button>
+					<!-- <p>There are <span id="numLetters"></span> letters in this word.</p> -->
+				</div>
+			</div>
+			<div class="row align-items-center">
+				<div class="col-12" style="padding-top: 2em;">
+					<h3>You have <span id="guesses-left">0</span> guesses Left.</h3>
+				</div>
+			</div>
+			<div class="row align-items-center">
+				<div class="col-12" style="padding: 2em 0; height:120px">
+					<h5>These are the wrong letters.<br><br>
+						<span id="guessed-letters"></span>
+					</h5>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12 text-center" id="under-score-section">
+					<h2>
+						<span id="under-score">_ _ _ _ _ _</span>
+					</h2>
+				</div>
+			</div>
+<!-- 			<div class="row">
+
+				<div class="col-12 text-center" style="padding-top: 1em;">
+				<div id="guessed-letters">
+				<a id="a">A</a>
+				<a id="b">B</a>
+				<a id="c">C</a>
+				<a id="d">D</a>
+				<a id="e">E</a>
+				<a id="f">F</a>
+				<a id="g">G</a>
+				<a id="h">H</a>
+				<a id="i">I</a>
+				<a id="j">J</a>
+				<a id="k">K</a>
+				<a id="l">L</a>
+				<a id="m">M</a>
+				<a id="n">N</a>
+				<a id="o">O</a>
+				<a id="p">P</a>
+				<a id="q">Q</a>
+				<a id="r">R</a>
+				<a id="s">S</a>
+				<a id="t">T</a>
+				<a id="u">U</a>
+				<a id="v">V</a>
+				<a id="w">W</a>
+				<a id="x">X</a>
+				<a id="y">Y</a>
+				<a id="z">Z</a>
+			</div> -->
+			<div class="row justify-content-md-center ">
+				<div class="col-md-auto " style="padding-top: 2em;">
+					<h4>Wins: <span id="wins">0</span></h4>
+				</div>
+				<div class="col-md-auto" style="padding-top: 2em;">
+					<h4>Losses: <span id="losses">0</span></h4>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+<!-- Get audio to work -->
+<audio id="aww">
+  <source src="aww.mp3" type="audio/mpeg">
+</audio>
+<audio id="cheer">
+  <source src="person_cheering.mp3" type="audio/mpeg">
+</audio>
+
+<!-- scripts -->
+<!-- <script>
+	var aww = document.getElementById("aww"); 
+
+function playAudio() { 
+    aww.play(); 
+} 
+</script> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="assets/javascript/game.js"></script>
+
+</body>
+</html>
